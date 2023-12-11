@@ -46,6 +46,7 @@ section {
 
 html {
     -webkit-font-smoothing: antialiased;
+    min-width: 320px;
 }
 
 a {
@@ -260,7 +261,7 @@ nav {
     opacity: 0;
     margin: 0;
     padding: 0;
-    width: 170px;
+    /* width: 170px; */
     position: absolute;
     left: 0px;
     background: #fff;
@@ -564,4 +565,21 @@ a.homer {
     border: 2px solid black;
     margin: 10px;
     padding: 7px;
+}
+
+
+#celltable{
+    width: 65%;
+    margin: auto;
+}
+
+@media(max-width: 625px){
+    #celltable{
+        width: 75%;
+    }
+}
+@media(max-width: 440px){
+    table td{
+       font-size: 12px; 
+    }
 }
