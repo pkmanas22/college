@@ -568,10 +568,28 @@ a.homer {
 }
 
 
+/* pdf icon */
+table tr td img{
+    margin: auto;
+    width: 20px;
+    height: 20px;
+}
+
+table tr td:nth-child(2),
+table tr td:nth-child(3),
+table tr th{
+    text-align: center;
+}
+
+
 #celltable{
     width: 65%;
     margin: auto;
 }
+
+table td{
+    font-size: 15px; 
+ }
 
 @media(max-width: 625px){
     #celltable{
