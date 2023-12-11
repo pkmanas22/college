@@ -1,270 +1,272 @@
-
 <!doctype html>
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FM Autonomous College </title>
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="prefixfree.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-    <link rel="stylesheet" href="./css/fmc.css">
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <style>
-        @import url(http://fonts.googleapis.com/css?family=roboto:400,400italic,600,700,800);
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FM Autonomous College </title>
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="prefixfree.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<link rel="stylesheet" href="./css/fmc.css">
+	<link rel="stylesheet" href="./css/bootstrap.css">
+	<style>
+		@import url(http://fonts.googleapis.com/css?family=roboto:400,400italic,600,700,800);
 
-        #more {
-            display: none;
-        }
+		#more {
+			display: none;
+		}
 
-        #PD_more {
-            display: none;
-        }
-    </style>
-    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            var touch = $('#resp-menu');
-            var menu = $('.menu');
+		#PD_more {
+			display: none;
+		}
+	</style>
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			var touch = $('#resp-menu');
+			var menu = $('.menu');
 
-            $(touch).on('click', function (e) {
-                e.preventDefault();
-                menu.slideToggle();
-            });
+			$(touch).on('click', function (e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
 
-            $(window).resize(function () {
-                var w = $(window).width();
-                if (w > 767 && menu.is(':hidden')) {
-                    menu.removeAttr('style');
-                }
-            });
+			$(window).resize(function () {
+				var w = $(window).width();
+				if (w > 767 && menu.is(':hidden')) {
+					menu.removeAttr('style');
+				}
+			});
 
-        });
-    </script>
-    <script type="text/javascript">
+		});
+	</script>
+	<script type="text/javascript">
 
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-36251023-1']);
-        _gaq.push(['_setDomainName', 'jqueryscript.net']);
-        _gaq.push(['_trackPageview']);
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-36251023-1']);
+		_gaq.push(['_setDomainName', 'jqueryscript.net']);
+		_gaq.push(['_trackPageview']);
 
-        (function () {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
+		(function () {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
 
-    </script>
+	</script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 100) {
-                    $('#scroll').fadeIn();
-                } else {
-                    $('#scroll').fadeOut();
-                }
-            });
-            $('#scroll').click(function () {
-                $("html, body").animate({
-                    scrollTop: 0
-                }, 600);
-                return false;
-            });
-        });
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					$('#scroll').fadeIn();
+				} else {
+					$('#scroll').fadeOut();
+				}
+			});
+			$('#scroll').click(function () {
+				$("html, body").animate({
+					scrollTop: 0
+				}, 600);
+				return false;
+			});
+		});
 
-        function DynamicReadMode() {
-            var dots = document.getElementById("dots");
-            var moreText = document.getElementById("more");
-            var btnText = document.getElementById("myBtn");
+		function DynamicReadMode() {
+			var dots = document.getElementById("dots");
+			var moreText = document.getElementById("more");
+			var btnText = document.getElementById("myBtn");
 
-            if (dots.style.display === "none") {
-                dots.style.display = "inline";
-                btnText.innerHTML = "Read more";
-                moreText.style.display = "none";
-            } else {
-                dots.style.display = "none";
-                btnText.innerHTML = "Read less";
-                moreText.style.display = "inline";
-            }
-        }
+			if (dots.style.display === "none") {
+				dots.style.display = "inline";
+				btnText.innerHTML = "Read more";
+				moreText.style.display = "none";
+			} else {
+				dots.style.display = "none";
+				btnText.innerHTML = "Read less";
+				moreText.style.display = "inline";
+			}
+		}
 
-        function principalDeskReadMode() {
-            var dots = document.getElementById("PD_dots");
-            var moreText = document.getElementById("PD_more");
-            var btnText = document.getElementById("PD_myBtn");
+		function principalDeskReadMode() {
+			var dots = document.getElementById("PD_dots");
+			var moreText = document.getElementById("PD_more");
+			var btnText = document.getElementById("PD_myBtn");
 
-            if (dots.style.display === "none") {
-                dots.style.display = "inline";
-                btnText.innerHTML = "Read more";
-                moreText.style.display = "none";
-            } else {
-                dots.style.display = "none";
-                btnText.innerHTML = "Read less";
-                moreText.style.display = "inline";
-            }
-        }
-    </script>
+			if (dots.style.display === "none") {
+				dots.style.display = "inline";
+				btnText.innerHTML = "Read more";
+				moreText.style.display = "none";
+			} else {
+				dots.style.display = "none";
+				btnText.innerHTML = "Read less";
+				moreText.style.display = "inline";
+			}
+		}
+	</script>
 </head>
-<body>
-    <img border="0" src="images/fmlogo1.jpg" class="banner" height="50" />
-    <nav>
-        <a id="resp-menu" class="responsive-menu" href="#"><i class="fa fa-reorder"></i> Menu</a>
-        <ul class="menu">
-            <li><a class="homer" href="index.htm"><i class="fa fa-home"></i> Home</a></li>
-            <li>
-                <a href="#">About Us</a>
-                <ul class="sub-menu">
-                    <li><a href="logo.pdf">Logo</a></li>
-                    <li><a href="#">The Flag & Anthem</a></li>
-                    <li>
-                        <a href="#">College HMV &raquo;</a>
-                        <ul>
-                            <li><a href="college_hist.htm">History</a></li>
-                            <li><a href="mission.htm">Mission</a></li>
-                            <li><a href="vision.htm">Vission</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="core_value.pdf">Core Value</a></li>
-                    <li><a href="best_practices.pdf">Best Practices</a></li>
-                    <li><a href="thrust.pdf">Priority & Thrust</a></li>
-                    <li><a href="ec_members.pdf">Governing Body</a></li>
-                    <li><a href="organogram.pdf">Organogram</a></li>
-                    <li><a href="code_of_conduct_for_teachers_principal.pdf">Code of Conduct</a></li>
-                    <li><a href="principal_list.pdf">List of Principals</a></li>
-                    <li><a href="vice_principal_list.pdf">List of Vice Principlas</a></li>
-                    <li><a href="community_service.pdf">Community Services</a></li>
 
-                </ul>
-            </li>
-            <li>
-                <a href="#">Academics</a>
-                <ul class="sub-menu">
-                   <li><a href="academic_calender.htm">Academic Calender</a></li>
-                    <li><a href="acad.htm">Courses & Seats</a></li>
+<body>
+	<img border="0" src="images/fmlogo1.jpg" class="banner" height="50" />
+	<nav>
+		<a id="resp-menu" class="responsive-menu" href="#"><i class="fa fa-reorder"></i> Menu</a>
+		<ul class="menu">
+			<li><a class="homer" href="index.htm"><i class="fa fa-home"></i> Home</a></li>
+			<li>
+				<a href="#">About Us</a>
+				<ul class="sub-menu">
+					<li><a href="logo.pdf">Logo</a></li>
+					<li><a href="#">The Flag & Anthem</a></li>
+					<li>
+						<a href="#">College HMV &raquo;</a>
+						<ul>
+							<li><a href="college_hist.htm">History</a></li>
+							<li><a href="mission.htm">Mission</a></li>
+							<li><a href="vision.htm">Vission</a></li>
+						</ul>
+					</li>
+					<li><a href="core_value.pdf">Core Value</a></li>
+					<li><a href="best_practices.pdf">Best Practices</a></li>
+					<li><a href="thrust.pdf">Priority & Thrust</a></li>
+					<li><a href="ec_members.pdf">Governing Body</a></li>
+					<li><a href="organogram.pdf">Organogram</a></li>
+					<li><a href="code_of_conduct_for_teachers_principal.pdf">Code of Conduct</a></li>
+					<li><a href="principal_list.pdf">List of Principals</a></li>
+					<li><a href="vice_principal_list.pdf">List of Vice Principlas</a></li>
+					<li><a href="community_service.pdf">Community Services</a></li>
+
+				</ul>
+			</li>
+			<li>
+				<a href="#">Academics</a>
+				<ul class="sub-menu">
+					<li><a href="academic_calender.htm">Academic Calender</a></li>
+					<li><a href="acad.htm">Courses & Seats</a></li>
 					<li><a href="#">Programme Outcomes (POs)</a></li>
 					<li><a href="#">Programme Specific Outcomes (PSOs)</a></li>
 					<li><a href="#">Course Outcomes (COs)</a></li>
-                    <li><a href="ADMISSION PROCEDURE.pdf">Admission Procedure</a></li>
-                    <li><a href="course_fee.htm">Course Fee</a></li>
-                    <li><a href="infrastructure.htm">Infrastructure</a></li>
-                    <li>
-                        <a href="#">Research &raquo;</a>
-                        <ul>
-                            <li><a href="research_project.htm">Research Project</a></li>
-                            <li><a href="research_publication.htm">Research Publication</a></li>
+					<li><a href="ADMISSION PROCEDURE.pdf">Admission Procedure</a></li>
+					<li><a href="course_fee.htm">Course Fee</a></li>
+					<li><a href="infrastructure.htm">Infrastructure</a></li>
+					<li>
+						<a href="#">Research &raquo;</a>
+						<ul>
+							<li><a href="research_project.htm">Research Project</a></li>
+							<li><a href="research_publication.htm">Research Publication</a></li>
 							<!--<li><a href="webinar.htm">Webinar</a></li>-->
-                        </ul>
-                    <li>
-                        <a href="#">Department &raquo;</a>
-                        <ul>
-                            <li><a href="student_project.htm">Student Projects</a></li>
-                            <li><a href="webinar.htm">Department Seminar</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="video_lecture.htm">Video Lecture</a></li>
-                    <li><a href="library.htm">Library</a></li>
-                    <li><a href="add_on_course.htm">Add On Course</a></li>
-                    <li><a href="community_college.htm">UGC Skilled Development Programme</a></li>
-                    <li><a href="academic_others.htm">Others</a></li>
-                </ul>
-            </li>
+						</ul>
+					<li>
+						<a href="#">Department &raquo;</a>
+						<ul>
+							<li><a href="student_project.htm">Student Projects</a></li>
+							<li><a href="webinar.htm">Department Seminar</a></li>
+						</ul>
+					</li>
+					<li><a href="video_lecture.htm">Video Lecture</a></li>
+					<li><a href="library.htm">Library</a></li>
+					<li><a href="add_on_course.htm">Add On Course</a></li>
+					<li><a href="community_college.htm">UGC Skilled Development Programme</a></li>
+					<li><a href="academic_others.htm">Others</a></li>
+				</ul>
+			</li>
 
-            <li>
-                <a href="#">College Insight</a>
-                <ul>
-                    <li><a href="alumni.htm">Alumni</a></li>
-                    <li><a href="co_curricular.htm">Co-Curricular Activities</a></li>
-                    <li><a href="student_bodies.pdf">Student Bodies</a></li>
-                    <li><a href="#">Healthy Practices</a></li>
-                    <li><a href="FINANC_ASSIST%20.pdf">Financial Assistance & Scholarship</a></li>
-                    <li><a href="RTI FM COLLEGE.pdf">RTI</a></li>
-                    <li><a href="divya.pdf">Divayangjan</a></li>
-                    <li><a href="#">College Magazine</a></li>
-                    <li><a href="facilities.htm">Facilities</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Faculty</a>
+			<li>
+				<a href="#">College Insight</a>
+				<ul>
+					<li><a href="alumni.htm">Alumni</a></li>
+					<li><a href="co_curricular.htm">Co-Curricular Activities</a></li>
+					<li><a href="student_bodies.pdf">Student Bodies</a></li>
+					<li><a href="#">Healthy Practices</a></li>
+					<li><a href="FINANC_ASSIST%20.pdf">Financial Assistance & Scholarship</a></li>
+					<li><a href="RTI FM COLLEGE.pdf">RTI</a></li>
+					<li><a href="divya.pdf">Divayangjan</a></li>
+					<li><a href="#">College Magazine</a></li>
+					<li><a href="facilities.htm">Facilities</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Faculty</a>
 
-                <ul>
-                    <li><a href="tfaculty.htm">Teaching</a></li>
-                    <li><a href="NON-tfaculty.htm">Non-Teaching</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Committees & Cell</a>
-                <ul>
-                    <li>
-                        <a href="#">Statutory Committees &raquo;</a>
-                        <ul>
-                            <li><a href="ec_committee.htm" target="_blank">Executive</a></li>
-                            <li><a href="finance_committee.htm" target="_blank">Finance</a></li>
-                            <li><a href="academic_committee.htm" target="_blank">Academic</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Non-Statutory Committees &raquo;</a>
-                        <ul>
-                           <li><a href="cell.htm">Cells</a></li>
-                            <li><a href="comte.htm">Committees</a></li>
-                        </ul>
+				<ul>
+					<li><a href="tfaculty.htm">Teaching</a></li>
+					<li><a href="NON-tfaculty.htm">Non-Teaching</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Committees & Cell</a>
+				<ul>
+					<li>
+						<a href="#">Statutory Committees &raquo;</a>
+						<ul>
+							<li><a href="ec_committee.htm" target="_blank">Executive</a></li>
+							<li><a href="finance_committee.htm" target="_blank">Finance</a></li>
+							<li><a href="academic_committee.htm" target="_blank">Academic</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Non-Statutory Committees &raquo;</a>
+						<ul>
+							<li><a href="cell.htm">Cells</a></li>
+							<li><a href="comte.htm">Committees</a></li>
+						</ul>
 
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#"> Examination</a>
-                <ul>
-                    <li><a href="exam_regulation.htm">Rules & Regulations</a></li>
-                    <li><a href="Board_Of_Studies_Members_2020.pdf">Board of Studies</a></li>
-                    <li><a href="syllabus.htm">Syllabus</a></li>
-                    <li><a href="ques_bank.htm">Question Bank</a></li>
-                    <li><a href="exam_committee.pdf">Examination Committees</a></li>
-                    <li><a href="CBCSReg.pdf">Instruction to Students</a></li>
-                    <li><a href="exam_schedule.htm">Exam Schedule</a></li>
-                    <li><a href="exam_result.htm">Result</a></li>
-                    <li><a href="otg.htm">On Time Graduation(OTG)</a></li>
-                </ul>
-            </li>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#"> Examination</a>
+				<ul>
+					<li><a href="exam_regulation.htm">Rules & Regulations</a></li>
+					<li><a href="Board_Of_Studies_Members_2020.pdf">Board of Studies</a></li>
+					<li><a href="syllabus.htm">Syllabus</a></li>
+					<li><a href="ques_bank.htm">Question Bank</a></li>
+					<li><a href="exam_committee.pdf">Examination Committees</a></li>
+					<li><a href="CBCSReg.pdf">Instruction to Students</a></li>
+					<li><a href="exam_schedule.htm">Exam Schedule</a></li>
+					<li><a href="exam_result.htm">Result</a></li>
+					<li><a href="otg.htm">On Time Graduation(OTG)</a></li>
+				</ul>
+			</li>
 
-            <li>
-                <a href="#">Iqac</a>
-                <ul>
-                    <li><a href="naac.htm">NAAC</a></li>
-                    <li><a href="ugc_autonomy.htm">UGC Autonomy</a></li>
+			<li>
+				<a href="#">Iqac</a>
+				<ul>
+					<li><a href="naac.htm">NAAC</a></li>
+					<li><a href="ugc_autonomy.htm">UGC Autonomy</a></li>
 					<li><a href="govt_approval_letters.htm">Govt.Approval Letters</a></li>
-                    <li><a href="UNIVERSITY AFFILIATIONAS_2019.pdf">University Affiliation</a></li>
-                    <li><a href="iqac.htm">Proceedings</a></li>
-                    <li><a href="iqar.htm">AQAR</a></li>
-                    <li><a href="aishe.htm">AISHE</a></li>
+					<li><a href="UNIVERSITY AFFILIATIONAS_2019.pdf">University Affiliation</a></li>
+					<li><a href="iqac.htm">Proceedings</a></li>
+					<li><a href="iqar.htm">AQAR</a></li>
+					<li><a href="aishe.htm">AISHE</a></li>
 					<li><a href="iqac_audit.htm">Audit Report</a></li>
-                    <li><a href="ssr_report_fmac_2019.pdf">SSR</a></li>
+					<li><a href="ssr_report_fmac_2019.pdf">SSR</a></li>
 					<li><a href="webinar.htm">Webinar</a></li>
 					<li><a href="forms_format.htm">Forms & Format</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Career Counselling</a>
-                <ul>
-                    <li><a href="career_notice.htm">Notice</a></li>
-                    <li><a href="ccc_prog.htm">Programmes</a></li>
-                    <li><a href="placement.htm">Placement</a></li>
-                </ul>
-            </li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Career Counselling</a>
+				<ul>
+					<li><a href="career_notice.htm">Notice</a></li>
+					<li><a href="ccc_prog.htm">Programmes</a></li>
+					<li><a href="placement.htm">Placement</a></li>
+				</ul>
+			</li>
 
-            <li><a href="tender.htm">Tender</a></li>
-            <li><a href="contact.pdf">Contact</a></li>
-        </ul>
-    </nav>
+			<li><a href="tender.htm">Tender</a></li>
+			<li><a href="contact.pdf">Contact</a></li>
+		</ul>
+	</nav>
 
-   
+
 	<div class="fmhist">
-		<h1 style="font-weight: 700; color: #da9008f5;" align="center">Notice for Staff & Students<span id="fullstop" style="visibility: hidden;">:</span></h1>
+		<h1 style="font-weight: 700; color: #da9008f5;" align="center">Notice for Staff & Students<span id="fullstop"
+				style="visibility: hidden;">:</span></h1>
 
 		<table id="celltable">
 			<tr>
@@ -278,51 +280,59 @@
 				<img border="0" src="pdf-icon.png" width="16" height="16"></a></th>
 			</tr>-->
 			<tr>
-				<td><b><font color="green"><a href="exam_5th_endsem_schedule.pdf" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp; UG 5th/7th End Semester Exam Schedule-2023  </font></b></td>
+				<td><b>
+						<font color="green"><a href="exam_5th_endsem_schedule.pdf"
+								target="_blank">&nbsp;&nbsp;&nbsp;&nbsp; UG 5th/7th End Semester Exam Schedule-2023
+						</font>
+					</b></td>
 				<td>04-12-23</td>
-				<td><a href="exam_5th_endsem_schedule.pdf" target="_blank"><img border="0" src="pdf-icon.png" width="16" height="16"></a></td>
+				<td><a href="exam_5th_endsem_schedule.pdf" target="_blank"><img border="0" src="pdf-icon.png" width="16"
+							height="16"></a></td>
 			</tr>
 			<tr>
-				<td><b><font color="green"><a href="readmission_notice_dt17-11-23.pdf" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp; Readmission Notice-2023  </font></b></td>
+				<td><b>
+						<font color="green"><a href="readmission_notice_dt17-11-23.pdf"
+								target="_blank">&nbsp;&nbsp;&nbsp;&nbsp; Readmission Notice-2023 </font>
+					</b></td>
 				<td>17-11-23</td>
-				<td><a href="readmission_notice_dt17-11-23.pdf" target="_blank"><img border="0" src="pdf-icon.png" width="16" height="16"></a></td>
+				<td><a href="readmission_notice_dt17-11-23.pdf" target="_blank"><img border="0" src="pdf-icon.png"
+							width="16" height="16"></a></td>
 			</tr>
 			<tr>
-				<td><b><font color="green"><a href="Readmission_Notice_31-10-23.pdf" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp; Readmission Notice-2023  </font></b></td>
+				<td><b>
+						<font color="green"><a href="Readmission_Notice_31-10-23.pdf"
+								target="_blank">&nbsp;&nbsp;&nbsp;&nbsp; Readmission Notice-2023 </font>
+					</b></td>
 				<td>31-10-23</td>
-				<td><a href="Readmission_Notice_31-10-23.pdf" target="_blank"><img border="0" src="pdf-icon.png" width="16" height="16"></a></td>
+				<td><a href="Readmission_Notice_31-10-23.pdf" target="_blank"><img border="0" src="pdf-icon.png"
+							width="16" height="16"></a></td>
 			</tr>
 			<tr>
-				<td><b><font color="green"><a href="regd_receipt_dt21-09-23.pdf" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp; Registration Reciept for 2021-22 Admission Batch  </font></b></td>
+				<td><b>
+						<font color="green"><a href="regd_receipt_dt21-09-23.pdf"
+								target="_blank">&nbsp;&nbsp;&nbsp;&nbsp; Registration Reciept for 2021-22 Admission
+								Batch </font>
+					</b></td>
 				<td>21-09-23</td>
-				<td><a href="sregd_receipt_dt21-09-23.pdf" target="_blank"><img border="0" src="pdf-icon.png" width="16" height="16"></a></td>
+				<td><a href="sregd_receipt_dt21-09-23.pdf" target="_blank"><img border="0" src="pdf-icon.png" width="16"
+							height="16"></a></td>
 			</tr>
 		</table>
 	</div>
 
-    
-
-    <div class="footer-border">
-        <br>
-    </div>
-    <div class="final-footer">
-	
-			
-        <p align="justify" style="font-family: time;color: #FFFF; font-size:small; margin-left:100px">
-            <b>
-                Copyright@2021 fmcollege.nic.in All Right Reserved. Website developed By National Informatics Centre, Bhubaneswar 
-				<script language="JavaScript">
-					<!-- Hide JavaScript...
-					var LastUpdated = document.lastModified;
-					document.writeln ("<html><body>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</body></html>Last updated " +  LastUpdated);
-					
-					
-					// End Hiding -->
-				</script>
-            </b>
-        </p>
-		
-    </div>                
+	<footer>
+		<p>Copyright@2021 fmcollege.nic.in All Right Reserved. <br>Website developed By National Informatics Centre,Bhubaneswar <br>
+			<script language="JavaScript">
+				<!-- Hide JavaScript...
+				var LastUpdated = document.lastModified;
+				document.writeln ("<html><body>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</body></html>Last updated " +  LastUpdated);
+				
+				
+				// End Hiding -->
+			</script>
+		</p>
+	</footer>
 
 </body>
+
 </html>
